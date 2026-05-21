@@ -328,6 +328,33 @@
         .topbar { padding: 15px 20px; }
         .fab-whatsapp { width: 50px; height: 50px; font-size: 24px; bottom: 20px; right: 20px; }
     }
+
+    /* --- SEÇÃO ENTREGAS (+40K JOGOS ATIVOS) --- */
+    .delivery-card {
+        background: linear-gradient(135deg, rgba(0, 255, 65, 0.05) 0%, rgba(20, 20, 20, 1) 100%);
+        border: 1px dashed var(--neon);
+        box-shadow: 0 0 15px rgba(0, 255, 65, 0.05);
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.2s, border-color 0.2s;
+    }
+    .delivery-card:hover {
+        transform: translateY(-2px);
+        border-color: #00FF41;
+        box-shadow: 0 0 25px rgba(0, 255, 65, 0.15);
+    }
+    .delivery-badge {
+        background: var(--neon);
+        color: #000;
+        font-size: 0.65rem;
+        font-weight: 900;
+        padding: 4px 10px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 12px;
+        letter-spacing: 0.5px;
+    }
   </style>
 </head>
 <body>
@@ -393,6 +420,20 @@
                 <h3>SUA LICENÇA</h3>
                 <p style="color:#888; font-size:0.9rem">Acesso liberado.</p>
                 <div class="status-badge">VITALÍCIO</div>
+            </div>
+
+            <div class="card delivery-card">
+                <div class="delivery-badge">✓ ATIVO NO SEU PLANO</div>
+                <h3>OFERTA +40.000 JOGOS</h3>
+                <ul style="list-style: none; margin: 15px 0; padding: 0; font-size: 0.85rem; line-height: 1.6; color: #a1a1aa; text-align: left;">
+                    <li style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;"><span style="color: var(--neon);">✓</span> <b>+40.000 jogos</b> (Catálogo Completo)</li>
+                    <li style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;"><span style="color: var(--neon);">✓</span> Todos os Lançamentos 2024/2025</li>
+                    <li style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;"><span style="color: var(--neon);">✓</span> Atualizações Vitalícias</li>
+                    <li style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;"><span style="color: var(--neon);">✓</span> Anti-ban e seguro</li>
+                    <li style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;"><span style="color: var(--neon);">✓</span> Suporte WhatsApp Prioritário 24h</li>
+                    <li style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;"><span style="color: var(--neon);">✓</span> Acesso a Jogos Rockstar / Ubisoft</li>
+                    <li style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;"><span style="color: var(--neon);">✓</span> Online Desbloqueado</li>
+                </ul>
             </div>
             
             <div class="card community-card">
@@ -498,6 +539,19 @@
           <button class="btn-launcher-download" onclick="window.open('https://drive.google.com/file/d/1Y0BDD6tHA8Ls6SXvOOOpVKilwFlTBW2t/view?usp=sharing', '_blank')">
               <span>⬇</span> BAIXAR JOGOS (+40K)
           </button>
+          
+          <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid #222;">
+              <h4 style="color: #fff; font-size: 0.95rem; margin-bottom: 10px;">Conteúdo Entregue:</h4>
+              <ul style="list-style: none; padding: 0; font-size: 0.85rem; line-height: 1.6; color: #a1a1aa; text-align: left;">
+                  <li style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;"><span style="color: var(--neon);">✓</span> <b>+40.000 jogos</b> (Catálogo Completo)</li>
+                  <li style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;"><span style="color: var(--neon);">✓</span> Todos os Lançamentos 2024/2025</li>
+                  <li style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;"><span style="color: var(--neon);">✓</span> Atualizações Vitalícias</li>
+                  <li style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;"><span style="color: var(--neon);">✓</span> Anti-ban e seguro</li>
+                  <li style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;"><span style="color: var(--neon);">✓</span> Suporte WhatsApp Prioritário 24h</li>
+                  <li style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;"><span style="color: var(--neon);">✓</span> Acesso a Jogos Rockstar / Ubisoft</li>
+                  <li style="margin-bottom: 6px; display: flex; align-items: center; gap: 8px;"><span style="color: var(--neon);">✓</span> Online Desbloqueado</li>
+              </ul>
+          </div>
       </div>
   </dialog>
 
